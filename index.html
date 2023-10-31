@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="globals.css">
+</head>
+<body>
+<main>
+    <div class="header">
+        <header>
+            <nav class="navbar container d-flex navbar-desktop">
+                <div>
+                    <a class="navbar-brand" href="#"><img src="image/logo.png"></a>
+                </div>
+                <div>
+                    <ul class="d-flex navbar-menu">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">How to buy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tokenomics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Roadmap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Partners</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Whitepaper</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="nav-item-btn__buy">
+                        <a class="nav-link" href="#">Buy</a>
+                    </div>
+                </div>
+            </nav>
+            <nav class="navbar container py-4 navbar-mobile">
+                <div class="nav-item">
+                    <a class="navbar-brand" href="#"><img src="image/logo.png"></a>
+                </div>
+                <div class="icon-menu">
+                    <svg class="icon-menu__open" width="30px" height="30px" viewBox="0 0 20.00 20.00"
+                         xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000000"
+                         transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                           stroke-width="2.68"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill="#ffffff" fill-rule="evenodd"
+                                  d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"></path>
+                        </g>
+                    </svg>
+                    <svg class="icon-menu__close" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30"
+                         height="30"
+                         viewBox="0,0,256,256">
+                        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                           stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                           font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                           style="mix-blend-mode: normal">
+                            <g transform="scale(8.53333,8.53333)">
+                                <path d="M7,4c-0.25587,0 -0.51203,0.09747 -0.70703,0.29297l-2,2c-0.391,0.391 -0.391,1.02406 0,1.41406l7.29297,7.29297l-7.29297,7.29297c-0.391,0.391 -0.391,1.02406 0,1.41406l2,2c0.391,0.391 1.02406,0.391 1.41406,0l7.29297,-7.29297l7.29297,7.29297c0.39,0.391 1.02406,0.391 1.41406,0l2,-2c0.391,-0.391 0.391,-1.02406 0,-1.41406l-7.29297,-7.29297l7.29297,-7.29297c0.391,-0.39 0.391,-1.02406 0,-1.41406l-2,-2c-0.391,-0.391 -1.02406,-0.391 -1.41406,0l-7.29297,7.29297l-7.29297,-7.29297c-0.1955,-0.1955 -0.45116,-0.29297 -0.70703,-0.29297z"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </nav>
+            <div class="navbar-mobile navbar-mobile__menu d-flex"
+                 style="flex-direction: column; justify-content: center;justify-items: center">
+                <div class="mx-auto text-center">
+                    <ul class="d-flex navbar-menu" style="flex-direction: column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">How to buy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tokenomics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Roadmap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Partners</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Whitepaper</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-item-btn__buy" style="margin-left: 25px">
+                    <a class="nav-link" href="#">Buy</a>
+                </div>
+            </div>
+        </header>
+        <section class="banner container">
+            <div class="banner-content row">
+                <div class="col-md-6">
+                    <h2 class="banner-content__title">WELCOME TO SMOKER:<br/>PIONEERING THE MEMECOIN REVOLUTION</h2>
+                    <div class="banner-content_pra">
+                        <p class="banner-content__text">Embark on an extraordinary adventure with Smoker, much like
+                            the
+                            enigmatic
+                            scientist Smoker in the One Piece universe.</p>
+                        <p class="banner-content__text">
+                            Just as Smoker's ingenuity propels the world of science in the manga, Smoker memecoin is
+                            poised
+                            to innovate the crypto realm.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-img">
+                <img src="image/smoker-banner.png">
+            </div>
+            <div class="banner-contract">
+                <h5 class="banner-contract_title">$SMOKER Official Contract:</h5>
+                <div class="banner-contract_address">
+                    <p class="contract_address">0x4C561c1ef2109fc6b230304b114671F72820421B</p>
+                    <svg class="copy-address" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                        <path d="M23.7009 20.3093V5.47894C23.7009 3.72157 22.2707 2.29144 20.5134 2.29144H5.68298C3.92561 2.29144 2.49548 3.72157 2.49548 5.47894V20.3093C2.49548 22.0667 3.92561 23.4968 5.68298 23.4968H20.5134C22.2707 23.4968 23.7009 22.0667 23.7009 20.3093ZM4.62048 20.3093V5.47894C4.62048 4.89315 5.09719 4.41644 5.68298 4.41644H20.5134C21.0991 4.41644 21.5759 4.89315 21.5759 5.47894V20.3093C21.5759 20.8951 21.0991 21.3718 20.5134 21.3718H5.68298C5.09719 21.3718 4.62048 20.8951 4.62048 20.3093ZM28.3171 10.5032H25.7345C25.148 10.5032 24.672 10.9784 24.672 11.5657C24.672 12.1529 25.148 12.6282 25.7345 12.6282H28.3171C28.9029 12.6282 29.3796 13.1049 29.3796 13.6907V28.521C29.3796 29.1068 28.9029 29.5835 28.3171 29.5835H13.4874C12.9016 29.5835 12.4249 29.1068 12.4249 28.521V25.5836C12.4249 24.9971 11.9496 24.5211 11.3624 24.5211C10.7752 24.5211 10.2999 24.9971 10.2999 25.5836V28.521C10.2999 30.2784 11.73 31.7085 13.4874 31.7085H28.3171C30.0744 31.7085 31.5046 30.2784 31.5046 28.521V13.6907C31.5046 11.9333 30.0744 10.5032 28.3171 10.5032Z"
+                              fill="white"/>
+                    </svg>
+                </div>
+                <div class="banner-contract_btn">
+                    <a href="" class="btn">BUY NOW</a>
+                    <a href="" class="btn">VIEW CHART</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="marquee">
+        <div class="marquee-text">$SMOKER</div>
+        <div class="marquee-text">$SMOKER</div>
+        <div class="marquee-text">$SMOKER</div>
+        <div class="marquee-text">$SMOKER</div>
+        <div class="marquee-text">$SMOKER</div>
+        <div class="marquee-text">$SMOKER</div>
+        <div class="marquee-text">$SMOKER</div>
+        <div class="marquee-text">$SMOKER</div>
+        <div class="marquee-text">$SMOKER</div>
+        <div class="marquee-text">$SMOKER</div>
+        <div class="marquee-text">$SMOKER</div>
+        <div class="marquee-text">$SMOKER</div>
+        <div class="marquee-text">$SMOKER</div>
+        <div class="marquee-text">$SMOKER</div>
+        <div class="marquee-text">$SMOKER</div>
+    </div>
+    <section class="why-smoker">
+        <div class="container row why-smoker-body">
+            <div class="col-md-5 why-smoker-content">
+                <h3 class="why-smoker-content__title">WHY SMOKER?</h3>
+                <div class="why-smoker-content__pra">
+                    <p>Vegapunk memecoin isn't just a digital currency—it's an innovation-driven journey that mirrors
+                        the ingenuity of its namesake.</p>
+                    <p>We're not merely a memecoin; we're a catalyst for change, offering a potential for remarkable
+                        profits and groundbreaking plans.</p>
+                </div>
+            </div>
+            <div class="col-md-7 why-smoker-img">
+                <img src="image/why-smoker.png">
+            </div>
+        </div>
+    </section>
+    <section class="how-to-buy">
+        <div class="container row how-to-buy-body">
+            <div class="col-md-5 how-to-buy-img">
+                <img src="image/how-to-buy.png">
+            </div>
+            <div class="col-md-7 how-to-buy-content">
+                <div class="how-to-buy-content__title">
+                    <h3>HOW TO BUY $SMOKER?</h3>
+                </div>
+                <div class="how-to-buy-content__body">
+                    <div class="how-to-buy_item d-flex">
+                        <div class="how-to-buy_item__img">
+                            <img src="image/step1.png">
+                        </div>
+                        <div class="how-to-buy_item__content">
+                            <h5>Step 1: Connect Your Wallet</h5>
+                            <p>Visit pinksale.finance and connect your wallet (e.g., MetaMask or Trust Wallet).</p>
+                        </div>
+                    </div>
+                    <div class="how-to-buy_item d-flex">
+                        <div class="how-to-buy_item__img">
+                            <img src="image/step2.png">
+                        </div>
+                        <div class="how-to-buy_item__content">
+                            <h5>Step 2: Select and Enter Amount</h5>
+                            <p>Choose the $SMOKER token sale, enter the amount of BNB you want to use.</p>
+                        </div>
+                    </div>
+                    <div class="how-to-buy_item d-flex">
+                        <div class="how-to-buy_item__img">
+                            <img src="image/step3.png">
+                        </div>
+                        <div class="how-to-buy_item__content">
+                            <h5>Step 3: Confirm and Complete</h5>
+                            <p>Confirm the transaction and wait for it to complete. Check your wallet for $SMOKER
+                                tokens.</p>
+                        </div>
+                    </div>
+                    <div class="how-to-buy_btn">
+                        <a class="btn" href="#">BUY NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="join-expedition">
+        <div class="container row join-expedition-body">
+            <div class="col-md-6 join-expedition-content">
+                <h3 class="join-expedition-content__title">Join the Vegapunk Expedition</h3>
+                <div class="join-expedition-content__pra">
+                    <p>Become a vital member of our journey. Vegapunk memecoin represents more than a
+                        cryptocurrency—it's a collective vision, a movement to foster a strong and united community.</p>
+                    <p>Together, we aim to navigate the unpredictable seas of the market and embrace the upcoming
+                        boom.</p>
+                </div>
+            </div>
+            <div class="col-md-6 join-expedition-img">
+                <img src="image/join-expedition.png">
+            </div>
+        </div>
+    </section>
+    <section class="the-vision">
+        <div class="container row the-vision-body">
+            <div class="col-md-5 the-vision-img">
+                <img src="image/the-vision.png">
+            </div>
+            <div class="col-md-7 the-vision-content">
+                <h3 class="the-vision-content__title">The Vegapunk Vision</h3>
+                <div class="the-vision-content__pra">
+                    <p>Vegapunk embodies the spirit of innovation and collaboration. Much like the character it's named
+                        after, our project emphasizes transparency, groundbreaking ideas, and inclusivity. We believe
+                        every individual in the Vegapunk community can make a difference, shaping the future of memecoin
+                        investments.</p>
+                    <p>Join us today and be at the forefront of the memecoin revolution. Let's craft a future where
+                        Vegapunk memecoin leads the way, just like its fictional namesake, toward exciting adventures
+                        and financial growth!</p>
+                    <p>Are you prepared to embrace the Vegapunk adventure? Let's pioneer this journey!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tokenomics my-5">
+        <div class="container row tokenomics-body">
+            <div class="col-md-12 tokenomics-heading">
+                <h3>TOKENOMICS</h3>
+            </div>
+            <div class="col-md-12 tokenomics-img">
+                <img src="image/tokenomic.png">
+            </div>
+            <div class="col-md-12 tokenomics-content">
+                <div class="tokenomics-total">
+                    <div class="tokenomics-total_img">
+                        <img src="image/logo.png">
+                    </div>
+                    <div class="tokenomics-total_content">
+                        <div>
+                            <h5>Total Supply</h5>
+                            <span>420,000,000,000 $Smoker</span>
+                        </div>
+                        <div class="my-2">
+                            <h5>Starting price</h5>
+                            <span>1 BNB = 1,201,200,000 $Smoker</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tokenomics-percent">
+                    <div class="tokenomics-presale">
+                        <div class="tokenomics-rectangle">
+                            <div class="tokenomics-presale_rectangle"></div>
+                        </div>
+                        <div class="tokenomics-presale_wrapper">Presale 28,6%</div>
+                    </div>
+                    <div class="tokenomics-liquidity">
+                        <div class="tokenomics-rectangle">
+                            <div class="tokenomics-liquidity_rectangle"></div>
+                        </div>
+                        <div class="tokenomics-liquidity_wrapper">Liquidity 14,1%</div>
+                    </div>
+                    <div class="tokenomics-burnt">
+                        <div class="tokenomics-rectangle">
+                            <div class="tokenomics-burnt_rectangle"></div>
+                        </div>
+                        <div class="tokenomics-liquidity_wrapper">Burnt 57,3%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="tokenomics-btn_buy text-center my-4">
+                <a class="btn" href="#">BUY NOW</a>
+            </div>
+        </div>
+    </section>
+    <section class="tax">
+        <div class="container row tax-body">
+            <div class="tax-content">
+                <h3 class="tax-title">TAX BUY & SELL 5/5</h3>
+                <span class="tax-subtitle">5% Tax Used as Smoker development fund</span>
+            </div>
+            <div class="tax-address">
+                <span>Token Address</span>
+                <div class="tax-contract_address">
+                    <p>0x4C561c1ef2109fc6b230304b114671F72820421B</p>
+                    <svg class="copy-address" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                        <path d="M23.7009 20.3093V5.47894C23.7009 3.72157 22.2707 2.29144 20.5134 2.29144H5.68298C3.92561 2.29144 2.49548 3.72157 2.49548 5.47894V20.3093C2.49548 22.0667 3.92561 23.4968 5.68298 23.4968H20.5134C22.2707 23.4968 23.7009 22.0667 23.7009 20.3093ZM4.62048 20.3093V5.47894C4.62048 4.89315 5.09719 4.41644 5.68298 4.41644H20.5134C21.0991 4.41644 21.5759 4.89315 21.5759 5.47894V20.3093C21.5759 20.8951 21.0991 21.3718 20.5134 21.3718H5.68298C5.09719 21.3718 4.62048 20.8951 4.62048 20.3093ZM28.3171 10.5032H25.7345C25.148 10.5032 24.672 10.9784 24.672 11.5657C24.672 12.1529 25.148 12.6282 25.7345 12.6282H28.3171C28.9029 12.6282 29.3796 13.1049 29.3796 13.6907V28.521C29.3796 29.1068 28.9029 29.5835 28.3171 29.5835H13.4874C12.9016 29.5835 12.4249 29.1068 12.4249 28.521V25.5836C12.4249 24.9971 11.9496 24.5211 11.3624 24.5211C10.7752 24.5211 10.2999 24.9971 10.2999 25.5836V28.521C10.2999 30.2784 11.73 31.7085 13.4874 31.7085H28.3171C30.0744 31.7085 31.5046 30.2784 31.5046 28.521V13.6907C31.5046 11.9333 30.0744 10.5032 28.3171 10.5032Z"
+                              fill="white"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="roadmap my-5">
+        <div class="container row roadmap-body">
+            <h3 class="roadmap-title">ROADMAP SMOKER</h3>
+            <div class="roadmap-content">
+                <div class="roadmap-item">
+                    <div class="roadmap-item__title"><span>STATE 1</span></div>
+                    <div class="roadmap-item__content">
+                        <ul class="roadmap-item__content">
+                            <li>Coming up with ideas for Smoker</li>
+                            <li>Build website for Smoker</li>
+                            <li>Build Smoker's social network</li>
+                            <li>Marketing with PinkSale (Pink Ecosystem) partners</li>
+                            <li>Pre-sale on Pinksale</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-item__title"><span>STATE 2</span></div>
+                    <div class="roadmap-item__content">
+                        <ul class="roadmap-item__content">
+                            <li>Launched on Pancakes Wap</li>
+                            <li>Give up ownership of the $Vegapunk contract</li>
+                            <li>Listed on DEX</li>
+                            <li>Mass marketing</li>
+                            <li>Listed on CoinMarketCap and CoinGecko</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-item__title"><span>STATE 3</span></div>
+                    <div class="roadmap-item__content">
+                        <ul class="roadmap-item__content">
+                            <li>Collaborate with technology partners</li>
+                            <li>Launching the NFT Collection</li>
+                            <li>Second review by Certik</li>
+                            <li>Announcement of main partners</li>
+                            <li>Listing Binance first</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer-body container row">
+        <div class="footer-content col-md-8 row">
+            <div class="footer-logo col-md-3">
+                <img src="image/logo.png" alt="">
+            </div>
+            <div class="footer-info col-md-9">
+                <h3>SMOKER</h3>
+                <p>Join us and join our fun and enthusiastic community. We firmly believe that Smoker will deserve a
+                    place in the hearts of investors. Come on Smoker, the goal of reviving the Memecoin market will not
+                    be far away.</p>
+            </div>
+        </div>
+        <div class="footer-social col-md-4">
+            <a href=""><svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="24" fill="url(#paint0_linear_167_6)" stroke="url(#paint1_linear_167_6)" stroke-width="2"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3311 25.6326C13.3866 26.4857 13.4798 27.1604 13.715 28.0307C13.7787 28.2667 13.9855 28.4251 14.2301 28.4251H17.5082C17.8264 28.4251 18.0717 28.153 18.0389 27.8365C17.8454 25.9718 17.8246 24.0325 17.9788 22.1516C18.0044 21.839 17.7606 21.5745 17.447 21.5745H14.2301C13.9856 21.5745 13.7788 21.7329 13.715 21.9689C13.5564 22.5565 13.4419 23.162 13.3782 23.7816C13.3209 24.3376 13.3145 24.6986 13.3175 25.2476L13.3311 25.6326ZM18.3296 19.4272C18.5452 18.2185 18.8346 17.0615 19.1913 15.9812C19.3508 15.4981 18.8002 15.0858 18.3816 15.3747C16.9851 16.3383 15.8071 17.5976 14.94 19.0616C14.7287 19.4183 14.9845 19.8671 15.3991 19.8671H17.8043C18.0651 19.8671 18.2838 19.684 18.3296 19.4272ZM29.8986 19.2298C29.5031 17.2339 28.8913 15.4152 28.0938 13.9104C28.0197 13.7706 27.9018 13.6789 27.748 13.6416C25.9465 13.2052 24.0528 13.2056 22.2526 13.6416C22.0988 13.6789 21.9809 13.7705 21.9067 13.9104C21.1093 15.4153 20.4976 17.2339 20.102 19.2298C20.0363 19.5614 20.2874 19.8671 20.6254 19.8671H29.3752C29.7132 19.8671 29.9643 19.5614 29.8986 19.2298ZM32.1963 19.8671H34.6016C35.0162 19.8671 35.272 19.4183 35.0607 19.0616C34.1935 17.5974 33.0154 16.3377 31.6188 15.3744C31.2002 15.0856 30.6497 15.4979 30.8091 15.9809C31.1658 17.0613 31.4553 18.2184 31.671 19.4273C31.7169 19.684 31.9355 19.8671 32.1963 19.8671ZM32.4925 28.4252H35.7706C36.0151 28.4252 36.2219 28.2668 36.2857 28.0308C36.4443 27.4435 36.5589 26.8379 36.6225 26.218C36.6846 25.6106 36.6831 25.3325 36.6831 24.7286C36.6831 24.4866 36.6439 23.99 36.6224 23.7816C36.5588 23.162 36.4442 22.5565 36.2856 21.9689C36.2219 21.7329 36.015 21.5745 35.7705 21.5745H32.5537C32.2401 21.5745 31.9963 21.839 32.0219 22.1516C32.1761 24.0326 32.1553 25.9718 31.9618 27.8365C31.9289 28.153 32.1743 28.4252 32.4925 28.4252ZM31.5471 30.5588C31.2918 31.8022 30.9437 33.0463 30.5007 34.2065C30.3174 34.6864 30.8545 35.1233 31.287 34.8461C32.8294 33.8577 34.1249 32.5168 35.0604 30.9381C35.2717 30.5814 35.0159 30.1325 34.6013 30.1325H32.0697C31.8137 30.1325 31.5985 30.308 31.5471 30.5588ZM19.4999 34.2063C19.0568 33.046 18.7088 31.8023 18.4536 30.5588C18.4021 30.308 18.1869 30.1325 17.9309 30.1325H15.3994C14.9847 30.1325 14.729 30.5814 14.9403 30.9381C15.8758 32.5167 17.1712 33.8573 18.7135 34.8458C19.146 35.123 19.6831 34.6861 19.4999 34.2063ZM29.2262 30.1325H20.7744C20.43 30.1325 20.1775 30.4494 20.2543 30.7851C20.7342 32.8831 21.4568 34.7552 22.3769 36.2225C22.4579 36.3517 22.5757 36.4328 22.7253 36.4625C24.2272 36.7599 25.7722 36.7602 27.2753 36.4625C27.4249 36.4328 27.5426 36.3517 27.6237 36.2225C28.5438 34.7552 29.2665 32.8835 29.7464 30.7851C29.8232 30.4494 29.5706 30.1325 29.2262 30.1325ZM19.5843 24.6577C19.5843 25.7772 19.6502 26.8817 19.7738 27.9528C19.805 28.2233 20.0314 28.4252 20.3038 28.4252H29.6968C29.9692 28.4252 30.1957 28.2233 30.2269 27.9528C30.4513 26.0079 30.4771 24.0198 30.3002 22.0601C30.2752 21.7842 30.0458 21.5745 29.7687 21.5745H20.2319C19.9548 21.5745 19.7254 21.7842 19.7004 22.0601C19.6237 22.9109 19.5843 23.7797 19.5843 24.6577Z" fill="#1C1C1C"/>
+                <defs>
+                    <linearGradient id="paint0_linear_167_6" x1="50" y1="-1.78571" x2="-7.75042" y2="29.6161" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#AFAFAF"/>
+                        <stop offset="1" stop-color="#D9D9D9"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_167_6" x1="11.0577" y1="57.7381" x2="63.4831" y2="25.5844" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#AFAFAF"/>
+                        <stop offset="1" stop-color="#D9D9D9"/>
+                    </linearGradient>
+                </defs>
+            </svg></a>
+            <a href=""><svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="24" fill="url(#paint0_linear_167_7)" stroke="url(#paint1_linear_167_7)" stroke-width="2"/>
+                <g clip-path="url(#clip0_167_7)">
+                    <path d="M26.8619 23.4686L34.1472 15H32.4208L26.095 22.3532L21.0425 15H15.2151L22.8554 26.1193L15.2151 35H16.9416L23.6219 27.2348L28.9576 35H34.785L26.8614 23.4686H26.8619ZM24.4972 26.2173L23.7231 25.1101L17.5637 16.2997H20.2155L25.1862 23.4099L25.9603 24.5172L32.4216 33.7594H29.7698L24.4972 26.2177V26.2173Z" fill="#1C1C1C"/>
+                </g>
+                <defs>
+                    <linearGradient id="paint0_linear_167_7" x1="50" y1="-1.78571" x2="-7.75042" y2="29.6161" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#AFAFAF"/>
+                        <stop offset="1" stop-color="#D9D9D9"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_167_7" x1="11.0577" y1="57.7381" x2="63.4831" y2="25.5844" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#AFAFAF"/>
+                        <stop offset="1" stop-color="#D9D9D9"/>
+                    </linearGradient>
+                    <clipPath id="clip0_167_7">
+                        <rect width="20" height="20" fill="white" transform="translate(15 15)"/>
+                    </clipPath>
+                </defs>
+            </svg></a>
+            <a href=""><svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="24" fill="url(#paint0_linear_167_8)" stroke="url(#paint1_linear_167_8)" stroke-width="2"/>
+                <g clip-path="url(#clip0_167_8)">
+                    <path d="M22.6322 28.916L22.2683 34.0346C22.7889 34.0346 23.0144 33.811 23.2848 33.5424L25.7259 31.2095L30.7841 34.9137C31.7118 35.4307 32.3653 35.1585 32.6156 34.0603L35.9358 18.5026L35.9367 18.5017C36.2309 17.1304 35.4408 16.5941 34.5369 16.9305L15.0211 24.4023C13.6892 24.9193 13.7093 25.6618 14.7947 25.9982L19.7841 27.5501L31.3735 20.2984C31.9189 19.9372 32.4148 20.137 32.0069 20.4982L22.6322 28.916Z" fill="#1C1C1C"/>
+                </g>
+                <defs>
+                    <linearGradient id="paint0_linear_167_8" x1="50" y1="-1.78571" x2="-7.75042" y2="29.6161" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#AFAFAF"/>
+                        <stop offset="1" stop-color="#D9D9D9"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_167_8" x1="11.0577" y1="57.7381" x2="63.4831" y2="25.5844" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#AFAFAF"/>
+                        <stop offset="1" stop-color="#D9D9D9"/>
+                    </linearGradient>
+                    <clipPath id="clip0_167_8">
+                        <rect width="22" height="22" fill="white" transform="translate(14 15)"/>
+                    </clipPath>
+                </defs>
+            </svg></a>
+            <a href=""><svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="24" fill="url(#paint0_linear_167_9)" stroke="url(#paint1_linear_167_9)" stroke-width="2"/>
+                <path d="M18.7747 29.5837C23.6167 31.4733 27.7372 31.8413 32.4067 28.9001C32.3724 28.9514 31.4488 30.3198 29.0198 31.0211C29.5329 31.7225 30.2343 32.5264 30.2343 32.5264C31.7909 32.5264 33.3133 32.0816 34.6303 31.2264C35.6567 30.5421 36.2382 29.3619 36.1185 28.1303C35.9132 26.0264 35.4171 23.9737 34.6474 22.0067C33.6724 19.4409 31.329 17.6619 28.6093 17.4053C28.3698 17.3882 28.1988 17.3882 28.0961 17.3882L27.8225 17.6619C30.9527 18.5514 32.5093 19.9369 32.5435 19.9882C27.7369 17.5593 22.058 17.5251 17.2172 19.8856C17.2172 19.8856 18.7567 18.3632 22.1606 17.5593L21.9553 17.354C21.5961 17.354 21.254 17.3882 20.8948 17.4395C18.3803 17.8671 16.2764 19.5948 15.3698 21.9724C14.5829 24.025 14.0698 26.1803 13.8817 28.3698C13.779 29.5329 14.3264 30.679 15.2843 31.3461C16.5501 32.1843 18.0553 32.629 19.5777 32.629C19.5777 32.629 20.1935 31.825 20.8093 31.1066C18.5001 30.4224 17.5593 29.054 17.5422 29.0027L17.9768 29.2246C18.2366 29.3573 18.5029 29.4776 18.7747 29.5837ZM21.4593 28.0961C20.3474 28.0619 19.4751 27.1211 19.5093 25.9921C19.5435 24.9316 20.3988 24.0764 21.4593 24.0421C22.5711 24.0764 23.4435 25.0171 23.4093 26.1461C23.3579 27.2067 22.5198 28.0619 21.4593 28.0961ZM28.4382 28.0961C27.3263 28.0619 26.454 27.1211 26.4882 25.9921C26.5224 24.9316 27.3777 24.0764 28.4382 24.0421C29.5501 24.0764 30.4224 25.0171 30.3882 26.1461C30.354 27.2067 29.4987 28.0619 28.4382 28.0961Z" fill="#1C1C1C"/>
+                <defs>
+                    <linearGradient id="paint0_linear_167_9" x1="50" y1="-1.78571" x2="-7.75042" y2="29.6161" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#AFAFAF"/>
+                        <stop offset="1" stop-color="#D9D9D9"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_167_9" x1="11.0577" y1="57.7381" x2="63.4831" y2="25.5844" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#AFAFAF"/>
+                        <stop offset="1" stop-color="#D9D9D9"/>
+                    </linearGradient>
+                </defs>
+            </svg></a>
+            <a href=""><svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="24" fill="url(#paint0_linear_167_10)" stroke="url(#paint1_linear_167_10)" stroke-width="2"/>
+                <path d="M35.3999 25.1562C35.3479 23.9082 34.3079 22.9202 33.0339 22.9462C32.4619 22.9722 31.9419 23.2062 31.5519 23.5702C29.7839 22.3482 27.6779 21.6982 25.5199 21.6462L26.5339 16.7842L29.8879 17.4602C29.9919 18.3182 30.7459 18.9422 31.6039 18.8382C32.4619 18.7342 33.0859 17.9802 32.9819 17.1222C32.8779 16.2642 32.1239 15.6402 31.2659 15.7442C30.7719 15.7962 30.3299 16.0822 30.0959 16.4982L26.2739 15.7442C26.0139 15.6922 25.7539 15.8482 25.7019 16.1082L24.5579 21.5422C22.3739 21.5682 20.2679 22.2442 18.4479 23.4662C17.5379 22.6082 16.0819 22.6342 15.2239 23.5702C14.3659 24.4802 14.3919 25.9362 15.3279 26.7942C15.5099 26.9502 15.7179 27.1062 15.9519 27.2102C15.9259 27.4442 15.9259 27.6782 15.9519 27.8862C15.9519 31.3962 20.0339 34.2562 25.0779 34.2562C30.1219 34.2562 34.2039 31.4222 34.2039 27.8862C34.2299 27.6522 34.2299 27.4182 34.2039 27.2102C34.9319 26.8462 35.4259 26.0402 35.3999 25.1562ZM19.7219 26.7422C19.7219 25.8842 20.4239 25.1822 21.2819 25.1822C22.1399 25.1822 22.8419 25.8842 22.8419 26.7422C22.8419 27.6002 22.1399 28.3022 21.2819 28.3022C20.4239 28.3022 19.7219 27.6002 19.7219 26.7422ZM28.8219 31.0582C27.7039 31.8902 26.3519 32.3322 24.9739 32.2542C23.5959 32.3062 22.2179 31.8902 21.1259 31.0582C20.9699 30.8762 20.9959 30.6162 21.1779 30.4602C21.3339 30.3302 21.5419 30.3302 21.7239 30.4602C22.6599 31.1362 23.8039 31.5002 24.9739 31.4482C26.1439 31.5002 27.2879 31.1882 28.2499 30.4862C28.4319 30.3302 28.6919 30.3302 28.8739 30.4862C29.0299 30.6682 29.0299 30.9282 28.8739 31.1102V31.0582H28.8219ZM28.5619 28.3802C27.7039 28.3802 27.0019 27.6782 27.0019 26.8202C27.0019 25.9622 27.7039 25.2602 28.5619 25.2602C29.4199 25.2602 30.1219 25.9622 30.1219 26.8202C30.1479 27.6782 29.4979 28.4062 28.6139 28.4322C28.5879 28.4322 28.5619 28.4322 28.5359 28.4322L28.5619 28.3802Z" fill="#1C1C1C"/>
+                <defs>
+                    <linearGradient id="paint0_linear_167_10" x1="50" y1="-1.78571" x2="-7.75042" y2="29.6161" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#AFAFAF"/>
+                        <stop offset="1" stop-color="#D9D9D9"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_167_10" x1="11.0577" y1="57.7381" x2="63.4831" y2="25.5844" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#AFAFAF"/>
+                        <stop offset="1" stop-color="#D9D9D9"/>
+                    </linearGradient>
+                </defs>
+            </svg></a>
+            <a href=""><svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="24" fill="url(#paint0_linear_167_11)" stroke="url(#paint1_linear_167_11)" stroke-width="2"/>
+                <path d="M35.7747 19.3762C35.5154 18.4123 34.7554 17.6524 33.7916 17.3929C32.0309 16.9111 24.988 16.9111 24.988 16.9111C24.988 16.9111 17.9454 16.9111 16.1847 17.3746C15.2394 17.6339 14.4609 18.4124 14.2016 19.3762C13.7383 21.1367 13.7383 24.7879 13.7383 24.7879C13.7383 24.7879 13.7383 28.4575 14.2016 30.1996C14.4612 31.1634 15.2209 31.9233 16.1848 32.1828C17.9639 32.6647 24.9883 32.6647 24.9883 32.6647C24.9883 32.6647 32.0309 32.6647 33.7916 32.2012C34.7555 31.9418 35.5154 31.182 35.7749 30.2182C36.2381 28.4575 36.2381 24.8065 36.2381 24.8065C36.2381 24.8065 36.2567 21.1367 35.7747 19.3762ZM22.7457 28.161V21.4148L28.6022 24.7879L22.7457 28.161Z" fill="#1C1C1C"/>
+                <defs>
+                    <linearGradient id="paint0_linear_167_11" x1="50" y1="-1.78571" x2="-7.75042" y2="29.6161" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#AFAFAF"/>
+                        <stop offset="1" stop-color="#D9D9D9"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_167_11" x1="11.0577" y1="57.7381" x2="63.4831" y2="25.5844" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#AFAFAF"/>
+                        <stop offset="1" stop-color="#D9D9D9"/>
+                    </linearGradient>
+                </defs>
+            </svg></a>
+        </div>
+        <hr class="my-4">
+        <div class="coppyright text-center">
+            <p>© 2023 Smoker. All rights reserved.</p>
+        </div>
+    </div>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="main.js"></script>
+</body>
+</html>

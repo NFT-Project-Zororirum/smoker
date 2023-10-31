@@ -1,0 +1,903 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,700,600");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", Helvetica;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background: #0D0D0D;
+}
+.header {
+    width: 100%;
+    background-image: url("image/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.navbar {
+    padding: 2em 0;
+}
+
+.navbar-desktop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-mobile {
+    display: none !important;
+}
+
+.navbar-brand img {
+    width: 143px;
+    height: 143px;
+}
+
+.nav-item-btn__buy {
+    display: flex;
+    height: 40px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 30px;
+    border-color: transparent;
+    border-image: linear-gradient(to bottom, rgb(175, 175, 175), rgb(217, 217, 217)) 1;
+    background: linear-gradient(180deg, rgb(175, 175, 175) 0%, rgb(217, 217, 217) 100%);
+}
+
+.nav-item a {
+    font-family: "Montserrat", Helvetica;
+    font-weight: 600;
+    color: #FFFFFFFF;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+.nav-item a:hover{
+    color: #afabab;
+}
+
+.navbar-menu {
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar-mobile.navbar-mobile__menu {
+    display: none !important;
+}
+
+.navbar-mobile.navbar-mobile__menu.active {
+    display: flex !important;
+    animation: menuactive ease-in-out 0.7s;
+    margin: 2em 0;
+}
+
+.navbar-mobile .icon-menu__close {
+    display: none;
+}
+
+.banner-content .banner-content__title {
+    /*margin: 2.5em 0 0 2.5em;*/
+    font-family: "Montserrat", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.banner-content .banner-content_pra {
+    margin: 0.5em 0 0 0;
+}
+
+.banner-content .banner-content__text {
+    margin: 1em 0 0 0;
+    width: 645px;
+    color: #FFF;
+    font-family: "Montserrat", Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.banner-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.banner-img img {*/
+/*    margin: -16em auto;*/
+/*}*/
+
+.banner-contract {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 2em 0 2em 0;
+}
+
+.banner-contract_title {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.banner-contract_address {
+    color: #FFFFFF;
+    display: flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /*width: 500px;*/
+    border-radius: 30px;
+    border: 2px solid #AFAFAF;
+    background: linear-gradient(241deg, rgba(175, 175, 175, 0.10) -1.26%, rgba(217, 217, 217, 0.10) 95.68%);
+}
+
+.banner-contract_address p {
+    padding: 0;
+    margin: 0;
+}
+
+.banner-contract_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.banner-contract_btn .btn {
+    width: 151px;
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid #AFAFAF;
+    background: linear-gradient(241deg, #AFAFAF -1.26%, #D9D9D9 95.68%);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.banner-contract_btn .btn:nth-child(2) {
+    padding: 12px;
+    font-family: Montserrat;
+    color: white;
+    background: none;
+}
+
+
+.marquee {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    background: linear-gradient(241deg, #AFAFAF -1.26%, #D9D9D9 95.68%);
+}
+
+.marquee-text {
+    margin: 1em;
+    padding-right: 30px;
+    animation: marquee 10s linear infinite;
+    color: #0D0D0D;
+    text-align: center;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+/*why vegapunk*/
+.why-smoker {
+    margin: 7em 0;
+}
+
+.why-smoker .why-smoker-body {
+    display: flex;
+    /*position: relative;*/
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-image: url("image/why_vega_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 420px;
+}
+
+.why-smoker-content {
+    padding-left: 2em;
+    padding-bottom: 8em;
+}
+
+.why-smoker-content .why-smoker-content__title {
+    color: #1C1C1C;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.why-smoker-content .why-smoker-content__pra {
+    color: #1C1C1C;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.why-smoker-img img {
+    position: relative;
+    bottom: 6em;
+}
+
+/*how to buy*/
+.how-to-buy {
+    color: #FFFFFF;
+}
+
+.how-to-buy-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.how-to-buy-img img {
+    width: 100%;
+}
+
+.how-to-buy-content__title h3 {
+    color: #FFF;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.how-to-buy-content__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    /*padding: 2em 0;*/
+    margin: 3em 0;
+}
+
+.how-to-buy_item__img img {
+    width: 100px;
+    transform: translateY(-8%);
+}
+
+.how-to-buy_item {
+    padding: 1em 0 0 1em;
+    border-radius: 20px;
+    border: 2px dashed #FFFFFF;
+}
+
+.how-to-buy_item__content {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 0 1em;
+}
+
+.how-to-buy_item__content h5 {
+    color: #FFF;
+    /*text-align: center;*/
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.how-to-buy_item__content p {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.how-to-buy_btn .btn {
+    padding: 1em 2em;
+    border-radius: 30px;
+    border: 2px solid #AFAFAF;
+    background: linear-gradient(241deg, #AFAFAF -1.26%, #D9D9D9 95.68%);
+    color: #1C1C1C;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/*join expedition*/
+.join-expedition {
+    background-image: url("image/join_expedition_bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 5em 0;
+}
+
+.join-expedition-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.join-expedition-img img {
+    overflow: hidden;
+    /*width: 100%;*/
+    transform: translateX(-11%);
+}
+
+.join-expedition-content__title {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.join-expedition-content__pra p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/*the vision*/
+.the-vision {
+    background-image: url("image/the-vision-bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 6em 0;
+}
+
+.the-vision-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+
+.the-vision-img img {
+    transform: translateX(-10%);
+}
+
+.the-vision-content {
+    transform: translate(12%, 50%);
+    /*width: 600px;*/
+}
+
+.the-vision-content__title {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.the-vision-content__pra p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/*tokenomic*/
+.tokenomics {
+    color: #FFFFFF;
+}
+
+.tokenomics-heading {
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.tokenomics-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.tokenomics-img img {
+    width: 100%;
+}
+
+.tokenomics-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    gap: 3em;
+    width: 65%;
+    padding: 2em;
+    border-radius: 20px;
+    border: 1px solid #FFFFFF;
+    background: linear-gradient(241deg, rgba(175, 175, 175, 0.20) -1.26%, rgba(217, 217, 217, 0.20) 95.68%);
+    backdrop-filter: blur(10px);
+}
+
+.tokenomics-total {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 0 3em;
+}
+
+.tokenomics-percent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 0 4em;
+}
+
+.tokenomics-total_img img {
+    width: 90px;
+    height: 90px;
+    flex-shrink: 0;
+}
+
+.tokenomics-total_content h5 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.tokenomics-total_content span {
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.tokenomics-rectangle {
+    width: 764.34px;
+    height: 15px;
+    background-color: #d9d9d980;
+    border-radius: 20px;
+}
+
+.tokenomics-presale_rectangle {
+    width:28.6%;
+    height: 15px;
+    background-color: #dc393d;
+    border-radius: 20px;
+}
+
+.tokenomics-liquidity_rectangle {
+    width: 14.1%;
+    background-color: #4462ae;
+    height: 15px;
+    border-radius: 20px;
+}
+
+.tokenomics-burnt_rectangle {
+    width: 57.3%;
+    background-color: #f4ab0d;
+    height: 15px;
+    border-radius: 20px;
+}
+
+.tokenomics-btn_buy .btn {
+    padding: 1em 2em;
+    border-radius: 30px;
+    border: 2px solid #AFAFAF;
+    background: linear-gradient(241deg, #AFAFAF -1.26%, #D9D9D9 95.68%);
+    color: #1C1C1C;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+/*tax&sell*/
+.tax {
+    color: #FFFFFF;
+}
+.tax-body {
+    display: flex;
+    flex-direction: column;
+   gap: 2em;
+    margin: 0 auto;
+}
+.tax-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.tax-title{
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.tax-subtitle{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.tax-address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    /*padding: 2em 0;*/
+}
+.tax-contract_address {
+    color: #FFFFFF;
+    display: flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /*width: 500px;*/
+    border-radius: 30px;
+    border: 2px solid #AFAFAF;
+    background: linear-gradient(241deg, rgba(175, 175, 175, 0.10) -1.26%, rgba(217, 217, 217, 0.10) 95.68%);
+}
+
+.tax-contract_address p {
+    padding: 0;
+    margin: 0;
+}
+/*roadmap*/
+.roadmap{
+    color: #FFFFFF;
+}
+.roadmap-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 2em;
+    margin: 0 auto;
+}
+.roadmap-title{
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.roadmap-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.roadmap-item{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 25em;
+    height: 18em;
+    border-radius: 20px;
+    background: linear-gradient(241deg, rgba(175, 175, 175, 0.20) -1.26%, rgba(217, 217, 217, 0.20) 95.68%);
+    backdrop-filter: blur(10px);
+}
+.roadmap-item__title{
+    display: flex;
+    padding: 26px 84px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background: linear-gradient(241deg, #AFAFAF -1.26%, #D9D9D9 95.68%);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+/*footer*/
+.footer-body{
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+.footer-content{
+    display: flex;
+}
+.footer-logo img{
+    padding: 1em;
+}
+.footer-info{
+    margin: auto;
+}
+.footer-social{
+    display: flex;
+    gap: 1em;
+    margin: auto;
+}
+.footer-line{
+    width: 100%;
+    height: 20px;
+    background-color: red;
+    color: red;
+    /*margin: 3em 0;*/
+}
+
+@media (max-width: 480px) {
+
+    .navbar-desktop {
+        display: none !important;
+    }
+
+    .navbar-mobile {
+        display: flex !important;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbar-mobile .navbar-brand img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .navbar-mobile .icon-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    /*banner*/
+    .banner-content .banner-content__text {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .banner-content .banner-content__title {
+        font-size: 20px;
+    }
+
+    .banner-img img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .banner-contract_address {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .banner-contract_address p {
+        font-size: 13px;
+    }
+
+    .marquee-text {
+        padding: 0.2em;
+        font-size: 16px;
+    }
+
+    /*why-vega*/
+    .why-smoker .why-smoker-body {
+        height: 100%;
+    }
+
+    .why-smoker-img img {
+        width: 100%;
+        bottom: 0;
+    }
+
+    .why-smoker-content {
+        padding: 1em 0 0 0;
+    }
+
+    .why-smoker-content .why-smoker-content__title {
+        font-size: 30px;
+        margin-bottom: 1em;
+    }
+
+    .why-smoker-content__pra {
+        font-size: 16px;
+    }
+
+    .why-smoker {
+        margin: 2em 0.5em;
+    }
+
+    /*how to buy*/
+    .how-to-buy-img img {
+        width: 100%;
+    }
+
+    .how-to-buy-content {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .how-to-buy-body {
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
+
+    .how-to-buy-content__title h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .how-to-buy_item__img img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .how-to-buy_item__content h5 {
+        font-size: 15px;
+    }
+
+    .how-to-buy_item__content p {
+        font-size: 12px;
+    }
+
+    .how-to-buy_btn .btn {
+        font-size: 14px;
+    }
+
+    /*join expedition*/
+    .join-expedition {
+        padding: 2em 0;
+    }
+
+    .join-expedition-content__title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .join-expedition-content__pra p {
+        font-size: 14px;
+    }
+
+    .join-expedition-img img {
+        width: 100%;
+        transform: translateX(0);
+    }
+
+    /*the vision*/
+    .the-vision{
+        padding: 0;
+    }
+    .the-vision-body {
+        flex-direction: column-reverse;
+    }
+
+    .the-vision-img img {
+        width: 100%;
+        transform: translateX(0);
+    }
+
+    .the-vision-content {
+        transform: translateY(0);
+    }
+    .the-vision-content__title {
+        font-size: 24px;
+        text-align: center;
+    }
+    .the-vision-content__pra p {
+        font-size: 14px;
+    }
+    /*tokenomics*/
+    .tokenomics-content {
+        width: 100%;
+        padding: 1em;
+        gap: 0.2em;
+    }
+    .tokenomics-total {
+        padding: 0;
+    }
+    .tokenomics-total_content h5 {
+        font-size: 12px;
+    }
+    .tokenomics-total_content span {
+        font-size: 14px;
+    }
+    .tokenomics-rectangle {
+        width: 100%;
+    }
+    .tokenomics-rectangle{
+        width: 20em;
+    }
+    .tokenomics-btn_buy .btn{
+        padding: 0.5em 2em;
+    }
+    /*tax&sell*/
+    .tax-title{
+        font-size: 24px;
+        text-align: center;
+    }
+    .tax-subtitle{
+        font-size: 14px;
+    }
+    .tax-contract_address{
+        font-size: 12px;
+        width: 100%;
+        padding: 10px;
+    }
+    /*roadmap*/
+    .roadmap-item{
+        width: 90%;
+    }
+    .roadmap-item__title{
+        padding: 1em 0;
+        font-size: 18px;
+    }
+    /*footer*/
+    .footer-social{
+        gap: 0.4em;
+    }
+    .footer-logo{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-logo img{
+        margin: 0 auto;
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+@keyframes menuactive {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+@keyframes menuinactive {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
